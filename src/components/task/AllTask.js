@@ -162,7 +162,7 @@ const AllTask = (props) => {
                           <td className='text-center'>{formattedDate}</td>
                           <td className='text-center'>
                             <Link to={`/edit/${task._id}`}><FontAwesomeIcon icon={faEdit} className='pe-3 Link'/></Link>
-                            <FontAwesomeIcon icon={faTrash} className='text-danger' onClick={()=>handleDelete(task._id)}/>
+                            <FontAwesomeIcon icon={faTrash} className='text-danger' style={{cursor:'pointer'}} onClick={()=>handleDelete(task._id)}/>
                             </td>
                         </tr>
                       );
