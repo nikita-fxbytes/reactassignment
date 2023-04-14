@@ -158,7 +158,7 @@ const AllTask = (props) => {
                       return (
                         <tr key={task._id}>
                           <td className='text-center'>{i +1 }</td>
-                          <td>{task.name}</td>
+                          <td><Link to={`/details/${task._id}`} className="text-decoration-none text-dark">{task.name}</Link></td>
                           <td className='text-center'>{formattedDate}</td>
                           <td className='text-center'>
                             <Link to={`/edit/${task._id}`}><FontAwesomeIcon icon={faEdit} className='pe-3 Link'/></Link>

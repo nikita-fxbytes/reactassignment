@@ -34,7 +34,6 @@ const EditTask = () => {
             type:'danger'
         });
     }
-
   }
   useEffect(()=>{
     taskEdit();
